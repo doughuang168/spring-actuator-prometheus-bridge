@@ -8,16 +8,16 @@ services:
     command:
     - '-config.file=/etc/prometheus/prometheus.yml'
     image: prom/prometheus
-spring_prometheus_bridge:
-  build: .
-  dockerfile: Dockerfile
-  container_name: spring-prometheus-bridge
-  environment:
-    BRIDGE_PORT: 3000
-    METRICS_HOST: $METRICS_HOST
-    METRICS_PORT: 9001
-    METRICS_PATH: metrics
-    METRICS_PROTO: https
-  ports:
-    - "4000:3000"
+  spring_prometheus_bridge:
+    build: .
+    container_name: spring-prometheus-bridge
+    environment:
+      BRIDGE_PORT: 3000
+      METRICS_HOST: $METRICS_HOST
+      METRICS_PORT: 9001
+      METRICS_PATH: metrics
+      METRICS_PROTO: https
+      MAPPING_FILE: prometheus-mapping.json
+    ports:
+      - "4000:3000"
 
