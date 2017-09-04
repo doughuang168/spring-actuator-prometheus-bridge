@@ -12,7 +12,6 @@ var metricsPort = process.env.METRICS_PORT;
 var metricsPath = process.env.METRICS_PATH;
 var metricsProto= process.env.METRICS_PROTO;
 
-//var mapFile = "prometheus-mapping.json";
 var mapFile = mappingFile;
 var place= jsonfile.readFileSync(mapFile);
 prometheus = {}
@@ -25,7 +24,6 @@ for(var exKey in place) {
 restapi.get('/metrics', function(req, res){
     
             agent
-	       //.get('https://api.mysay.net:9001/metrics')
 	       .get(metricsProto + '://' + metricsHost +':' + metricsPort +  '/'+ metricsPath )
                 .then(function(resp) {
 
