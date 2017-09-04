@@ -1,0 +1,191 @@
+{
+  "mem_prometheus": { 
+      "name": "mem", 
+      "map_to": "mem",
+      "value": 819542, 
+      "header_1": "# HELP mem mem", 
+      "header_2": "# TYPE mem gauge" 
+     },
+  "mem_free_prometheus": { 
+       "name": "mem.free", 
+       "map_to": "mem_free",
+       "value": 583955, 
+       "header_1": "# HELP mem_free mem_free", 
+       "header_2": "# TYPE mem_free gauge" 
+      },
+  "processors_prometheus": { 
+      "name": "processors", 
+      "map_to": "processors",
+      "value": 819542, 
+      "header_1": "# HELP processors processors", 
+      "header_2": "# TYPE processors gauge" 
+     },
+  "instance_uptime_prometheus": { 
+       "name": "instance.uptime", 
+       "map_to": "instance_uptime",
+       "value": 583955, 
+       "header_1": "# HELP instance_uptime instance_uptime", 
+       "header_2": "# TYPE instance_uptime gauge" 
+      },
+  "uptime_prometheus": { 
+      "name": "uptime", 
+      "map_to": "uptime",
+      "value": 819542, 
+      "header_1": "# HELP uptime uptime", 
+      "header_2": "# TYPE uptime gauge" 
+     },
+  "systemload_average_prometheus": { 
+       "name": "systemload.average", 
+       "map_to": "systemload_average",
+       "value": 0.87, 
+       "header_1": "# HELP systemload_average systemload_average", 
+       "header_2": "# TYPE systemload_average gauge" 
+      },
+  "heap_committed_prometheus": { 
+       "name": "heap.committed", 
+       "map_to": "heap_committed",
+       "value": 734720, 
+       "header_1": "# HELP heap_committed heap_committed", 
+       "header_2": "# TYPE heap_committed gauge" 
+      },
+  "heap_init_prometheus": { 
+       "name": "heap.init", 
+       "map_to": "heap_init",
+       "value": 786432, 
+       "header_1": "# HELP heap_init heap_init", 
+       "header_2": "# TYPE heap_init gauge" 
+      },
+  "heap_used_prometheus": { 
+       "name": "heap.used", 
+       "map_to": "heap_used",
+       "value": 150764, 
+       "header_1": "# HELP heap_used heap_used", 
+       "header_2": "# TYPE heap_used gauge" 
+      },
+  "heap_prometheus": { 
+      "name": "heap", 
+      "map_to": "heap",
+      "value": 734720, 
+      "header_1": "# HELP heap heap", 
+      "header_2": "# TYPE heap gauge" 
+     },
+  "nonheap_committed_prometheus": { 
+       "name": "nonheap.committed", 
+       "map_to": "nonheap_committed",
+       "value": 87248, 
+       "header_1": "# HELP nonheap_committed nonheap_committed", 
+       "header_2": "# TYPE nonheap_committed gauge" 
+      },  
+  "nonheap_init_prometheus": { 
+       "name": "nonheap.init", 
+       "map_to": "nonheap_init",
+       "value": 2496, 
+       "header_1": "# HELP nonheap_init nonheap_init", 
+       "header_2": "# TYPE nonheap_init gauge" 
+      },  
+  "nonheap_used_prometheus": { 
+       "name": "nonheap.used", 
+       "map_to": "nonheap_used",
+       "value": 84823, 
+       "header_1": "# HELP nonheap_used nonheap_used", 
+       "header_2": "# TYPE nonheap_used gauge" 
+      },  
+  "nonheap_prometheus": { 
+      "name": "nonheap", 
+      "map_to": "nonheap",
+      "value": 0, 
+      "header_1": "# HELP nonheap nonheap", 
+      "header_2": "# TYPE nonheap gauge" 
+     },
+  "threads_peak_prometheus": { 
+       "name": "threads.peak", 
+       "map_to": "threads_peak",
+       "value": 26, 
+       "header_1": "# HELP threads_peak threads_peak", 
+       "header_2": "# TYPE threads_peak gauge" 
+      },    
+  "threads_daemon_prometheus": { 
+       "name": "threads.daemon", 
+       "map_to": "threads_peak",
+       "value": 26, 
+       "header_1": "# HELP threads_daemon threads_daemon", 
+       "header_2": "# TYPE threads_daemon gauge" 
+      },      
+  "threads_totalStarted_prometheus": { 
+       "name": "threads.totalStarted", 
+       "map_to": "threads_totalStarted",
+       "value": 30, 
+       "header_1": "# HELP threads_totalStarted threads_totalStarted", 
+       "header_2": "# TYPE threads_totalStarted gauge" 
+      },      
+  "threads_prometheus": { 
+      "name": "threads", 
+      "map_to": "threads",
+      "value": 23, 
+      "header_1": "# HELP threads threads", 
+      "header_2": "# TYPE threads gauge" 
+     },  
+  "classes_prometheus": { 
+      "name": "classes", 
+      "map_to": "classes",
+      "value": 11229, 
+      "header_1": "# HELP classes classes", 
+      "header_2": "# TYPE classes gauge" 
+     },    
+  "classes_loaded_prometheus": { 
+      "name": "classes.loaded", 
+      "map_to": "classes_loaded",
+      "value": 11229, 
+      "header_1": "# HELP classes_loaded classes_loaded", 
+      "header_2": "# TYPE classes_loaded gauge" 
+     },    
+  "classes_unloaded_prometheus": { 
+      "name": "classes.unloaded", 
+      "map_to": "classes_unloaded",
+      "value": 11229, 
+      "header_1": "# HELP classes_unloaded classes_unloaded", 
+      "header_2": "# TYPE classes_unloaded gauge" 
+     },      
+  "gc_ps_scavenge_count_prometheus": { 
+      "name": "gc.ps_scavenge.count", 
+      "map_to": "gc_ps_scavenge_count", 
+      "value": 14, 
+      "header_1": "# HELP gc_ps_scavenge_count gc_ps_scavenge_count", 
+      "header_2": "# TYPE gc_ps_scavenge_count gauge" 
+     }, 
+  "gc_ps_scavenge_time_prometheus": { 
+      "name": "gc.ps_scavenge.time", 
+      "map_to": "gc_ps_scavenge_time", 
+      "value": 982, 
+      "header_1": "# HELP gc_ps_scavenge_time gc_ps_scavenge_time", 
+      "header_2": "# TYPE gc_ps_scavenge_time gauge" 
+     },      
+  "gc_ps_marksweep_count_prometheus": { 
+      "name": "gc.ps_marksweep.count", 
+      "map_to": "gc_ps_marksweep_count", 
+      "value": 3, 
+      "header_1": "# HELP gc_ps_marksweep_count gc_ps_marksweep_count", 
+      "header_2": "# TYPE gc_ps_marksweep_count gauge" 
+     },   
+  "gc_ps_marksweep_time_prometheus": { 
+      "name": "gc.ps_marksweep.time", 
+      "map_to": "gc_ps_marksweep_time", 
+      "value": 3, 
+      "header_1": "# HELP gc_ps_marksweep_time gc_ps_marksweep_time", 
+      "header_2": "# TYPE gc_ps_marksweep_time gauge" 
+     },   
+  "httpsessions_max_prometheus": { 
+      "name": "httpsessions.max", 
+      "map_to": "httpsessions_max",
+      "value": -1, 
+      "header_1": "# HELP httpsessions_max httpsessions_max", 
+      "header_2": "# TYPE httpsessions_max gauge" 
+     },    
+  "httpsessions_active_prometheus": { 
+      "name": "httpsessions.active", 
+      "map_to": "httpsessions_active",
+      "value": -1, 
+      "header_1": "# HELP httpsessions_active httpsessions_active", 
+      "header_2": "# TYPE httpsessions_active gauge" 
+     }
+}
